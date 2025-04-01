@@ -1,12 +1,8 @@
-# Getting Started with Create React App
+# ПРОЕКТ BLOG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект сделан по макету [figma](https://www.figma.com/design/XXBjJXew3xpfbOZUnO9QVB/Blog?node-id=9582-0&p=f&t=CrZienysKNO1s56I-0)
 
-## Посмотреть проект BLOG
+Посмотреть проект [versel]()
 
- [Versel](http://localhost:3000) 
-
-## Макет проекта BLOG
-
-[Figma](http://localhost:3000) 
+Документация [API](https://bump.sh/gerome-grignon-lp2/doc/realworld/)
 

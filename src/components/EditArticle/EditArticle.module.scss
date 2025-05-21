@@ -1,0 +1,19 @@
+.error {
+  width: 938px;
+  padding: 48px 32px;
+  margin: 26px auto;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px 0 rgba(34, 60, 80, 0.2);
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgba(245, 34, 45, 1);
+}
+
+.spin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

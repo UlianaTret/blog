@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 740px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  gap: 21px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(217, 217, 217, 1) 1px solid;
+  box-shadow: 6px 20px 100px -9px rgba(34, 60, 80, 0.2);
+
+  img {
+    width: 140px;
+    height: 140px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 135px;
+    h1 {
+      color: rgba(0, 0, 0, 0.75);
+    }
+    p {
+      color: rgba(0, 0, 0, 0.75);
+    }
+    a {
+      color: rgba(24, 144, 255, 1);
+    }
+  }
+}

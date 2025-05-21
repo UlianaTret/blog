@@ -1,0 +1,161 @@
+$titleForm: rgba(38, 38, 38, 1);
+$accentContrast: rgba(255, 255, 255, 1);
+$accent: rgba(24, 144, 255, 1);
+
+%style-text {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+%in-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign {
+  width: 384px;
+  border-radius: 6px;
+  padding: 48px 32px;
+  margin: 59px auto;
+  gap: 21px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(217, 217, 217, 1) 1px solid;
+  box-shadow: 6px 20px 100px -9px rgba(34, 60, 80, 0.2);
+
+  h1 {
+    @extend %style-text;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    color: $titleForm;
+    margin-bottom: 21px;
+  }
+
+  form {
+    @extend %in-column;
+
+    div {
+      @extend %in-column;
+      margin-bottom: 12px;
+
+      label {
+        @extend %style-text;
+        font-size: 14px;
+        line-height: 22px;
+        vertical-align: middle;
+        color: $titleForm;
+        text-align: left;
+        margin-bottom: 2px;
+      }
+      input {
+        height: 24px;
+        padding: 8px 12px;
+        @extend %style-text;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: middle;
+        color: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 1);
+        border: rgba(217, 217, 217, 1) 1px solid;
+      }
+    }
+    fieldset {
+      margin-top: 9px;
+      border: 0;
+      border-top: #e8e8e8 1px solid;
+      display: flex;
+      flex-direction: row;
+
+      input {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        margin-top: 11px;
+        margin-right: 8px;
+        background-color: $accentContrast;
+        border-radius: 2px;
+        border: 1px solid $accent;
+        transition: all 0.25s ease-in-out;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 0;
+          transition: all 0.25s ease-in-out;
+          overflow: hidden;
+        }
+
+        &:checked {
+          background-color: $accent;
+          border-radius: 2px;
+          border: 1px solid $accent;
+          background-repeat: no-repeat;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='15' height='15' rx='1.5' fill='%231890FF' stroke='%231890FF'/%3e%3cpath d='M3.91308 7.03516H3.91326C3.99256 7.03525 4.07081 7.05331 4.14213 7.08798C4.21341 7.12262 4.27591 7.17295 4.32497 7.2352L3.91308 7.03516ZM3.91308 7.03516H3.09394C2.89031 7.03516 2.7766 7.26975 2.90232 7.4292L2.90237 7.42927L6.11214 11.4957L6.11218 11.4957C6.32247 11.7619 6.72568 11.7611 6.93667 11.4962L6.93708 11.4957L12.6597 4.24398C12.6598 4.24378 12.66 4.24358 12.6602 4.24338C12.7884 4.08295 12.6699 3.85 12.4689 3.85H11.6498C11.4894 3.85 11.3367 3.9235 11.2376 4.05044C11.2375 4.05055 11.2374 4.05066 11.2373 4.05077L6.52403 10.0216M3.91308 7.03516L6.52403 10.0216M6.52403 10.0216L4.32506 7.23531L6.52403 10.0216Z' fill='white' stroke='white' stroke-width='0.3'/%3e%3c/svg%3e ");
+          background-position: center;
+          transition: all 0.25s ease-in-out;
+        }
+
+        &:hover {
+          border-radius: 2px;
+          border: 1px solid $accent;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+      label {
+        width: 270px;
+        height: 44px;
+        margin-top: 8px;
+        @extend %style-text;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        color: rgba(89, 89, 89, 1);
+      }
+    }
+    .send {
+      height: 40px;
+      border-radius: 4px;
+      border: 0;
+      padding: 8px 16px;
+
+      background-color: $accent;
+      color: $accentContrast;
+      @extend %style-text;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
+  }
+  .info {
+    height: 20px;
+    @extend %style-text;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(140, 140, 140, 1);
+
+    a {
+      text-decoration: none;
+      color: rgba(24, 144, 255, 1);
+    }
+  }
+}
+
+.error {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(245, 34, 45, 1);
+}
+.loading {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(24, 144, 255, 1);
+}

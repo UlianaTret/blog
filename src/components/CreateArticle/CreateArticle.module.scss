@@ -1,0 +1,156 @@
+$titleForm: rgba(38, 38, 38, 1);
+
+%style-text {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+%in-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.create {
+  width: 874px;
+  border-radius: 6px;
+  padding: 48px 32px;
+  margin: auto;
+  gap: 21px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(217, 217, 217, 1) 1px solid;
+  box-shadow: 6px 20px 100px -9px rgba(34, 60, 80, 0.2);
+
+  h1 {
+    @extend %style-text;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $titleForm;
+    margin-bottom: 21px;
+  }
+
+  .form {
+    @extend %in-column;
+
+    div {
+      @extend %in-column;
+      margin-bottom: 12px;
+      width: 874px;
+
+      label {
+        @extend %style-text;
+        font-size: 14px;
+        line-height: 22px;
+        vertical-align: middle;
+        color: $titleForm;
+        text-align: left;
+        margin-bottom: 2px;
+      }
+      input {
+        height: 24px;
+        padding: 8px 12px;
+        @extend %style-text;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: middle;
+        color: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 1);
+        border: rgba(217, 217, 217, 1) 1px solid;
+      }
+      .text {
+        @extend %style-text;
+        height: 168px;
+        padding: 7px 12px;
+        resize: none;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: middle;
+        color: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 1);
+        border: rgba(217, 217, 217, 1) 1px solid;
+      }
+    }
+
+    .tags {
+      @extend %in-column;
+
+      .tag {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+
+        input {
+          width: 276px;
+          height: 24px;
+          padding: 8px 12px;
+          margin-right: 17px;
+        }
+        .delete {
+          width: 120px;
+          height: 40px;
+          padding: 8px 16px;
+          margin-right: 17px;
+          border-radius: 4px;
+          border: rgba(245, 34, 45, 1) 1px solid;
+          color: rgba(245, 34, 45, 1);
+          background-color: white;
+        }
+        .add {
+          display: none;
+          width: 136px;
+          height: 40px;
+          padding: 8px 16px;
+          border-radius: 4px;
+          border: rgba(24, 144, 255, 1) 1px solid;
+          color: rgba(24, 144, 255, 1);
+          background-color: white;
+        }
+        &:last-child {
+          .add {
+            display: unset;
+          }
+        }
+      }
+    }
+    .send {
+      width: 319px;
+      height: 40px;
+      border-radius: 4px;
+      border: 0;
+      padding: 8px 16px;
+      background-color: rgba(24, 144, 255, 1);
+      color: rgba(255, 255, 255, 1);
+      @extend %style-text;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.error {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(245, 34, 45, 1);
+}
+
+.loading {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(24, 144, 255, 1);
+}
+
+.success {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(82, 196, 26, 1);
+}

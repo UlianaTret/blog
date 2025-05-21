@@ -1,0 +1,76 @@
+.article {
+  width: 938px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 26px auto;
+  box-shadow: 0 4px 12px 0 rgba(34, 60, 80, 0.2);
+
+  .articleText {
+    width: 880px;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+    word-break: break-all;
+    color: rgba(0, 0, 0, 0.75);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li,
+    ul {
+      margin-left: 40px;
+    }
+
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    blockquote {
+      border-left: 3px solid #ccc;
+      padding-left: 10px;
+      margin-left: 10px;
+      color: #7f8c8d;
+    }
+  }
+}
+
+.message {
+  width: max-content;
+  margin: 10px auto;
+  padding: 40px;
+  gap: 21px;
+}

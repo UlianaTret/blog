@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    width: auto;
+    margin: 26px auto 17px auto !important;
+  }
+}
+
+.message {
+  width: max-content;
+  margin: 10px auto;
+  padding: 40px;
+  gap: 21px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: rgba(217, 217, 217, 1) 1px solid;
+  box-shadow: 6px 20px 100px -9px rgba(34, 60, 80, 0.2);
+}

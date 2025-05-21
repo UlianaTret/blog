@@ -1,0 +1,104 @@
+$titleForm: rgba(38, 38, 38, 1);
+
+%style-text {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+%in-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign {
+  width: 384px;
+  border-radius: 6px;
+  padding: 48px 32px;
+  margin: 59px auto;
+  gap: 21px;
+  background-color: rgba(255, 255, 255, 1);
+  border: rgba(217, 217, 217, 1) 1px solid;
+  box-shadow: 6px 20px 100px -9px rgba(34, 60, 80, 0.2);
+
+  h1 {
+    @extend %style-text;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $titleForm;
+    margin-bottom: 21px;
+  }
+
+  form {
+    @extend %in-column;
+
+    div {
+      @extend %in-column;
+      margin-bottom: 12px;
+
+      label {
+        @extend %style-text;
+        font-size: 14px;
+        line-height: 22px;
+        vertical-align: middle;
+        color: $titleForm;
+        text-align: left;
+        margin-bottom: 2px;
+      }
+      input {
+        height: 24px;
+        padding: 8px 12px;
+        @extend %style-text;
+        font-size: 16px;
+        line-height: 24px;
+        vertical-align: middle;
+        color: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 1);
+        border: rgba(217, 217, 217, 1) 1px solid;
+      }
+    }
+    .send {
+      height: 40px;
+      border-radius: 4px;
+      border: 0;
+      padding: 8px 16px;
+      background-color: rgba(24, 144, 255, 1);
+      color: rgba(255, 255, 255, 1);
+      @extend %style-text;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
+  }
+  .info {
+    height: 20px;
+    @extend %style-text;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(140, 140, 140, 1);
+
+    a {
+      text-decoration: none;
+      color: rgba(24, 144, 255, 1);
+    }
+  }
+}
+
+.error {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(245, 34, 45, 1);
+}
+.loading {
+  @extend %style-text;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(24, 144, 255, 1);
+}
